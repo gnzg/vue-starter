@@ -1,12 +1,6 @@
 <template>
   <div id="app">
-    <nav>
-      <ul>
-        <li>link1</li>
-        <li>link2</li>
-        <li>link3</li>
-      </ul>
-    </nav>
+    <navigation />
 
     <button class="button button__burger" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="icon__line"></span>
@@ -23,30 +17,19 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import Navigation from "@/components/molecules/Navigation";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Navigation,
+    HelloWorld
   },
 };
 </script>
 
 <style lang="scss">
 @import './assets/scss/style';
-$breakpoints: (
-    "mobile": 576px,
-    "tablet": 768px,
-    "desktop": 992px,
-);
-
-@mixin respond-to($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
-      @content;
-    }
-  }
-}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

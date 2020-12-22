@@ -1,3 +1,20 @@
- @import './button';
- @import './semantic-colors';
+@import './mixins/index';
+@import './semantic-colors';
+@import './button';
+
+.container {
+  background-color: red;
+  @include respond-to("tablet") {
+    background-color: yellow;
+  }
+  @include respond-to("desktop") {
+    background-color: green;
+  }
+}
+
+nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
 
