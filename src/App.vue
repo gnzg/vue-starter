@@ -9,9 +9,9 @@
     </nav>
 
     <button class="button button__burger" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon__line"></span>
-          <span class="icon__line"></span>
-          <span class="icon__line"></span>
+      <span class="icon__line"></span>
+      <span class="icon__line"></span>
+      <span class="icon__line"></span>
     </button>
 
     <div class="container">
@@ -33,48 +33,48 @@ export default {
 </script>
 
 <style lang="scss">
-  @import './assets/scss/style.scss';
-  $breakpoints: (
+@import './assets/scss/style';
+$breakpoints: (
     "mobile": 576px,
     "tablet": 768px,
     "desktop": 992px,
-  );
+);
 
-  @mixin respond-to($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-      @media (min-width: map-get($breakpoints, $breakpoint)) {
-        @content;
-      }
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+
+  .container {
+    background-color: red;
+    @include respond-to("tablet") {
+      background-color: yellow;
+    }
+    @include respond-to("desktop") {
+      background-color: green;
     }
   }
 
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-
-    .container {
-      background-color: red;
-      @include respond-to("tablet") {
-        background-color: yellow;
-      }
-      @include respond-to("desktop") {
-        background-color: green;
-      }
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-    nav {
-      position: relative;
-      display: flex;
-      width: 100%;
-    }
+  img {
+    width: 100%;
+    height: auto;
   }
+
+  nav {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+}
 </style>
