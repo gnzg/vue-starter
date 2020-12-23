@@ -1,6 +1,6 @@
 @import './mixins/index';
 @import './semantic-colors';
-@import './button';
+@import './atoms/button';
 
 .container {
   background-color: red;
@@ -16,5 +16,9 @@ nav {
   position: relative;
   display: flex;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 

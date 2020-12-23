@@ -1,0 +1,49 @@
+@import '../mixins/respond-to';
+@import '../semantic-colors';
+
+.navigation {
+  .button__burger {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: $button-primary-background-color;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+
+    .icon__line {
+      position: relative;
+      width: 22px;
+      height: 2px;
+      top: 0;
+      vertical-align: middle;
+      outline: 0;
+      display: block;
+      border-radius: 1px;
+      background-color: $primary-color;
+
+      &:nth-child(2) {
+        margin-top: 4px;
+      }
+      &:nth-child(3) {
+        margin-top: 4px;
+        bottom: 0;
+      }
+    }
+
+    @include respond-to("desktop") {
+      display: none;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+
+    il {
+      padding: 1rem;
+      text-transform: uppercase;
+      line-height: 20px;
+    }
+  }
+}

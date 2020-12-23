@@ -2,12 +2,6 @@
   <div id="app">
     <navigation />
 
-    <button class="button button__burger" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="icon__line"></span>
-      <span class="icon__line"></span>
-      <span class="icon__line"></span>
-    </button>
-
     <div class="container">
       <img alt="Vue logo" src="./assets/logo.png" />
     </div>

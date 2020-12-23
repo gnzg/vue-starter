@@ -1,10 +1,17 @@
 <template>
-    <nav>
+    <nav class="navigation">
       <ul>
-        <li>link1</li>
-        <li>link2</li>
-        <li>link3</li>
+        <li><a href="">link1</a></li>
+        <li><a href="">link2</a></li>
+        <li><a href="">link3</a></li>
       </ul>
+
+      <button class="button button__burger" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon__line"></span>
+        <span class="icon__line"></span>
+        <span class="icon__line"></span>
+      </button>
+
     </nav>
 </template>
 
@@ -18,7 +25,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../assets/scss/style';
-
-
+@import '../../assets/scss/molecules/navigation';
 </style>
