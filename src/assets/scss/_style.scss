@@ -18,7 +18,11 @@ nav {
   width: 100%;
 }
 
-a {
+a, a:active, a:visited {
+  color: $link-primary-color;
   text-decoration: none;
 }
 
+*, ::after, ::before {
+  box-sizing: border-box;
+}

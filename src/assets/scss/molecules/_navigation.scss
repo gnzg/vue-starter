@@ -2,6 +2,12 @@
 @import '../semantic-colors';
 
 .navigation {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1001;
+
   .button__burger {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
@@ -40,10 +46,13 @@
     list-style: none;
     align-items: center;
 
-    il {
-      padding: 1rem;
+    li {
       text-transform: uppercase;
       line-height: 20px;
+
+      a.navigation__link {
+        padding: 1rem;
+      }
     }
   }
 }

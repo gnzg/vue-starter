@@ -47,11 +47,5 @@ export default {
     width: 100%;
     height: auto;
   }
-
-  nav {
-    position: relative;
-    display: flex;
-    width: 100%;
-  }
 }
 </style>
