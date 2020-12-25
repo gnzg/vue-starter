@@ -7,15 +7,19 @@
       backgroundSize: 'cover'
     }
   ">
+    <Label size="h2">My Stellar Flower Shop</Label>
   </div>
 </template>
 
 <script>
+import Label from '../atoms/Label';
 
 export default {
   name: "HeroImage",
-  components: {},
   props: ['src'],
+  components: {
+    Label
+  }
 }
 </script>
 
