@@ -1,7 +1,7 @@
 <template>
   <div class="hero-image"
     :style="{
-      backgroundImage: `url(${image})`,
+      backgroundImage: `url(${src})`,
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover'
@@ -11,16 +11,11 @@
 </template>
 
 <script>
-import image from '../../assets/images/vue_bg.jpeg';
 
 export default {
   name: "HeroImage",
   components: {},
-  data: () => {
-    return {
-      image: image
-    }
-  }
+  props: ['src'],
 }
 </script>
 

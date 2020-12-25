@@ -2,7 +2,9 @@
   <div id="app">
     <navigation />
     <div class="container">
-      <HeroImage />
+      <HeroImage
+        :src="require('./assets/images/vue_bg.jpeg')"
+      />
     </div>
     <img alt="Vue logo" src="./assets/images/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -20,7 +22,7 @@ export default {
     Navigation,
     HelloWorld,
     HeroImage
-  },
+  }
 };
 </script>
 
