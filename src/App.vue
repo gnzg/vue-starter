@@ -2,7 +2,7 @@
   <div id="app">
     <navigation />
     <div class="container">
-      <HeroImage img="./assets/images/vue_bg.jpeg"/>
+      <HeroImage />
     </div>
     <img alt="Vue logo" src="./assets/images/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -10,14 +10,16 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import HelloWorld from "@/components/HelloWorld.vue";
 import Navigation from "@/components/molecules/Navigation";
+import HeroImage from "@/components/molecules/HeroImage";
 
 export default {
   name: "App",
   components: {
     Navigation,
-    HelloWorld
+    HelloWorld,
+    HeroImage
   },
 };
 </script>
