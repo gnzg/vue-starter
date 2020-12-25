@@ -26,3 +26,8 @@ a, a:active, a:visited {
 *, ::after, ::before {
   box-sizing: border-box;
 }
+
+ul, body {
+  padding: 0;
+  margin: 0;
+}

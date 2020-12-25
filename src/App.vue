@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <navigation />
-
     <div class="container">
-      <img alt="Vue logo" src="./assets/logo.png" />
+      <HeroImage img="./assets/images/vue_bg.jpeg"/>
     </div>
+    <img alt="Vue logo" src="./assets/images/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>

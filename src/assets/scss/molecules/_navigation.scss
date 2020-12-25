@@ -9,12 +9,16 @@
   z-index: 1001;
 
   .button__burger {
+    position: fixed;
+    right: .5rem;
+    top: 1rem;
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     line-height: 1;
     background-color: $button-primary-background-color;
     border: 1px solid transparent;
     border-radius: 0.25rem;
+    cursor: pointer;
 
     .icon__line {
       position: relative;
@@ -41,14 +45,26 @@
     }
   }
   ul {
-    display: flex;
-    flex-direction: row;
+    display: none;
     list-style: none;
-    align-items: center;
+    width: 100%;
+    margin-top: 3.75rem;
+    background-color: white;
+
+    &.active {
+      display: block;
+    }
+
+    @include respond-to("desktop") {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
 
     li {
       text-transform: uppercase;
       line-height: 20px;
+      padding: .25rem;
 
       a.navigation__link {
         padding: 1rem;
