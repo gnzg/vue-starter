@@ -1,5 +1,6 @@
 <template>
-  <div class="Label {size}">
+  <div class="label"
+       :class="fontSize">
     <slot></slot>
   </div>
 </template>
@@ -10,6 +11,11 @@ export default {
   name: "Label",
   components: {},
   props: ['size'],
+  computed: {
+    fontSize: () => {
+        return 'h2';
+    }
+  }
 }
 </script>
 
