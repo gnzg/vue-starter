@@ -7,7 +7,7 @@
       backgroundSize: 'cover'
     }
   ">
-    <Label size="h2">My Stellar Flower Shop</Label>
+    <Label size="h3">My Stellar Flower Shop</Label>
   </div>
 </template>
 

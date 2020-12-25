@@ -12,8 +12,10 @@ export default {
   components: {},
   props: ['size'],
   computed: {
-    fontSize: () => {
-        return 'h2';
+    // using an arrow function here will not work as
+    // arrow functions lack context
+    fontSize: function () {
+      return this.size;
     }
   }
 }
