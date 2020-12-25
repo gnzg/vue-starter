@@ -33,23 +33,9 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 
-  .container {
-    background-color: red;
-    @include respond-to("tablet") {
-      background-color: yellow;
-    }
-    @include respond-to("desktop") {
-      background-color: green;
-    }
-  }
-
-  img {
-    width: 100%;
-    height: auto;
+  & .container {
+    margin-top: 100px;
   }
 }
 </style>

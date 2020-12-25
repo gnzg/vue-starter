@@ -7,6 +7,8 @@
   left: 0;
   top: 0;
   z-index: 1001;
+  height: 100px;
+  width: 100%;
 
   .button__burger {
     position: fixed;
@@ -48,7 +50,6 @@
     display: none;
     list-style: none;
     width: 100%;
-    margin-top: 3.75rem;
     background-color: white;
 
     &.active {
