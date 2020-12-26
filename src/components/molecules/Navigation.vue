@@ -1,6 +1,7 @@
 <template>
   <nav class="navigation">
     <div class="container">
+      <span>Hello</span>
       <ul
           v-bind:class="{active: isActive}"
       >

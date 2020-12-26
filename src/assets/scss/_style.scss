@@ -3,13 +3,10 @@
 @import './atoms/button';
 
 .container {
-  background-color: red;
   @include respond-to("tablet") {
-    background-color: yellow;
     max-width: 720px;
   }
   @include respond-to("desktop") {
-    background-color: green;
     max-width: 1140px;
   }
 }
