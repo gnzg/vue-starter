@@ -3,6 +3,7 @@
 @import './atoms/button';
 
 .container {
+  margin: auto;
   @include respond-to("tablet") {
     max-width: 720px;
   }
