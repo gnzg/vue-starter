@@ -1,27 +1,13 @@
 <template>
   <div id="app">
-    <router-link to="/foo">Go to Foo</router-link>
-    <router-link to="/bar">Go to Bar</router-link>
-
-    <navigation />
-    <HeroImage
-        :src="require('./assets/images/vue_bg.jpeg')"
-    />
-
     <router-view />
   </div>
 </template>
 
 <script>
-import Navigation from "@/components/molecules/Navigation";
-import HeroImage from "@/components/molecules/HeroImage";
 
 export default {
-  name: "App",
-  components: {
-    Navigation,
-    HeroImage
-  }
+  name: "App"
 };
 </script>
 

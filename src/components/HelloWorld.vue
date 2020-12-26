@@ -6,16 +6,13 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'HelloWorld'
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  h1 {
-    padding: 1rem;
-  }
+h1 {
+  padding: 1rem;
+}
 </style>
