@@ -5,7 +5,6 @@
         :src="require('../../assets/images/vue_bg.jpeg')"
     />
     <div>
-      <router-link :to="{ name: 'Foo' }">Go to Foo</router-link>
       <router-link :to="{ name: 'Slider Page' }">Go to Slider Page</router-link>
     </div>
   </div>
