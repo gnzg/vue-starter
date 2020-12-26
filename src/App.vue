@@ -1,16 +1,18 @@
 <template>
   <div id="app">
+    <router-link to="/foo">Go to Foo</router-link>
+    <router-link to="/bar">Go to Bar</router-link>
+
     <navigation />
     <HeroImage
         :src="require('./assets/images/vue_bg.jpeg')"
     />
-    <img alt="Vue logo" src="./assets/images/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
 import Navigation from "@/components/molecules/Navigation";
 import HeroImage from "@/components/molecules/HeroImage";
 
@@ -18,7 +20,6 @@ export default {
   name: "App",
   components: {
     Navigation,
-    HelloWorld,
     HeroImage
   }
 };
