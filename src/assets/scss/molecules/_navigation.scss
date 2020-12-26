@@ -7,8 +7,22 @@
   left: 0;
   top: 0;
   z-index: 1001;
-  height: 100px;
   width: 100%;
+  padding: .5rem 1rem;
+  background-color: $primary-color-2;
+
+  &, .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  & > .container {
+    height: 50px;
+  }
 
   .button__burger {
     position: fixed;
