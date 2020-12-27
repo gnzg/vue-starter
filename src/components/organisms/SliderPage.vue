@@ -1,6 +1,6 @@
 <template>
     <div class="slider-page">
-      <Label size="h2">Coming soon...</Label>
+      <Label size="h2">Slider coming soon...</Label>
     </div>
 </template>
 

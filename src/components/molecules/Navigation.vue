@@ -6,7 +6,7 @@
         <ul :class="{active: isActive}" :style="{ top: isActive ? '50px' : `-${items.length * 50}px` }">
           <li v-for="item in items" :key="item.id">
             <router-link
-                :to="item.routeName"
+                :to="item.route"
                 class="navigation__link"
             >{{  item.label }}</router-link>
           </li>
@@ -38,8 +38,8 @@ export default {
     return {
       isActive: false,
       items: [
-        { label: 'Slider page', routeName: 'Slider Page' },
-        { label: '404 example', routeName: '/404' },
+        { label: 'Slider page', route: 'slider-page' },
+        { label: '404 example', route: '/404' },
       ]
     }
   },
