@@ -4,17 +4,11 @@
       <div class="navigation__title">Hello</div>
       <div class="navigation__list">
         <ul v-bind:class="{active: isActive}">
-          <li>
+          <li v-for="item in items" :key="item.id">
             <router-link
-                :to="{ name: 'Slider Page' }"
+                :to="item.routeName"
                 class="navigation__link"
-            >Slider Page</router-link>
-          </li>
-          <li>
-            <router-link
-                to="/404"
-                class="navigation__link"
-            >Example 404 page</router-link>
+            >{{  item.label }}</router-link>
           </li>
         </ul>
       </div>
@@ -42,7 +36,11 @@ export default {
   },
   data: () => {
     return {
-      isActive: false
+      isActive: false,
+      items: [
+        { label: 'Slider page', routeName: 'Slider Page' },
+        { label: '404 example', routeName: '/404' },
+      ]
     }
   },
   methods: {
