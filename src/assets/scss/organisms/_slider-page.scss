@@ -1,15 +1,3 @@
-.fade {
-  &-enter-active, &-leave-active {
-    transition: all .3s ease;
-  }
-  &-enter, &-leave {
-    opacity: 0;
-  }
-  &-enter-to, &-leave-to {
-    opacity: 1;
-  }
-}
-
 .slider-page {
   .label {
     padding: 1rem;

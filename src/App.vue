@@ -15,7 +15,6 @@ export default {
 
 <style lang="scss">
 @import './assets/scss/style';
-@import './assets/scss/organisms/_slider-page.scss';
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -1,9 +1,9 @@
 <template>
   <nav class="navigation">
     <div class="container">
-      <div class="navigation__title">Hello</div>
+      <div class="navigation__title">Hero title</div>
       <div class="navigation__list">
-        <ul v-bind:class="{active: isActive}">
+        <ul :class="{active: isActive}" :style="{ top: isActive ? '50px' : `-${items.length * 50}px` }">
           <li v-for="item in items" :key="item.id">
             <router-link
                 :to="item.routeName"
