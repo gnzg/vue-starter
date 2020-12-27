@@ -32,6 +32,10 @@
     z-index: 3;
     background-color: $navigation-background-color;
     line-height: 18px;
+
+    @include respond-to("desktop") {
+      flex-grow: 0;
+    }
   }
 
   &__list {
@@ -75,7 +79,7 @@
         flex-direction: row;
         align-items: center;
         top: 0;
-        margin-left: auto;
+        justify-content: right;
       }
 
       li {

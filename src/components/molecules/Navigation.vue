@@ -10,8 +10,12 @@
                 class="navigation__link"
             >Slider Page</router-link>
           </li>
-          <li><a class="navigation__link" href="">link2</a></li>
-          <li><a class="navigation__link" href="">link3</a></li>
+          <li>
+            <router-link
+                to="/404"
+                class="navigation__link"
+            >Example 404 page</router-link>
+          </li>
         </ul>
       </div>
 
