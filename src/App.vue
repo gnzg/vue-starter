@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <transition name="fade">
     <router-view />
+    </transition>
   </div>
 </template>
 
@@ -13,6 +15,7 @@ export default {
 
 <style lang="scss">
 @import './assets/scss/style';
+@import './assets/scss/organisms/_slider-page.scss';
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -4,9 +4,6 @@
     <HeroImage
         :src="require('../../assets/images/vue_bg.jpeg')"
     />
-    <div>
-      <router-link :to="{ name: 'Slider Page' }">Go to Slider Page</router-link>
-    </div>
   </div>
 </template>
 
@@ -24,8 +21,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1 {
-  padding: 1rem;
-}
+<style lang="scss">
+  @import '../../assets/scss/organisms/home';
 </style>

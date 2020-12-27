@@ -1,14 +1,19 @@
 <template>
   <nav class="navigation">
     <div class="container">
-      <span>Hello</span>
-      <ul
-          v-bind:class="{active: isActive}"
-      >
-        <li><a class="navigation__link" href="">link1</a></li>
-        <li><a class="navigation__link" href="">link2</a></li>
-        <li><a class="navigation__link" href="">link3</a></li>
-      </ul>
+      <div class="navigation__title">Hello</div>
+      <div class="navigation__list">
+        <ul v-bind:class="{active: isActive}">
+          <li>
+            <router-link
+                :to="{ name: 'Slider Page' }"
+                class="navigation__link"
+            >Slider Page</router-link>
+          </li>
+          <li><a class="navigation__link" href="">link2</a></li>
+          <li><a class="navigation__link" href="">link3</a></li>
+        </ul>
+      </div>
 
       <button
           class="button button__burger"
