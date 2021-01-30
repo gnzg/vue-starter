@@ -1,4 +1,5 @@
-# my-project
+# vue-starter
+A basic webpage demonstrating popular web components realized in Vue.js  
 
 ## Project setup
 ```
